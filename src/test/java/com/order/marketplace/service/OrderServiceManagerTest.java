@@ -101,8 +101,8 @@ class OrderServiceManagerTest {
         OrderResult orderResult  = orderServiceManager.getOrders();
 
         assertEquals(orderResult.getSellerOrders().size(),3);
-        assertEquals(orderResult.getBuyerOrders().get(0).getQuantity(),Double.valueOf(2.0));
-        assertEquals(orderResult.getBuyerOrders().get(0).getPricePerKilogram(),20L);
+        assertEquals(orderResult.getSellerOrders().get(0).getQuantity(),Double.valueOf(2.0));
+        assertEquals(orderResult.getSellerOrders().get(0).getPricePerKilogram(),20L);
 
     }
 
